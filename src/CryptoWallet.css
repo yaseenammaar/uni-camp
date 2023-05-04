@@ -1,0 +1,255 @@
+.crypto-wallet-container {
+    width: 400px;
+    margin: 50px auto;
+    background-color: #f5f5f5;
+    border-radius: 10px;
+    padding: 20px;
+    }
+    
+    .crypto-wallet-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    }
+    
+    .crypto-wallet-logo {
+    display: flex;
+    align-items: center;
+    }
+    
+    .crypto-wallet-logo h1 {
+    margin-left: 10px;
+    }
+    
+    .crypto-wallet-balance {
+    display: flex;
+    align-items: center;
+    }
+    
+    .balance {
+    margin-right: 10px;
+    }
+    
+    .crypto-wallet-account {
+    margin-top: 20px;
+    position: relative;
+    }
+    
+    .crypto-wallet-account-selector {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    }
+    
+    .crypto-wallet-account-selector p {
+    margin-left: 10px;
+    }
+    
+    .crypto-wallet-account-options {
+    position: absolute;
+    top: 40px;
+    left: 0;
+    width: 100%;
+    background-color: #ffffff;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    }
+    
+    .crypto-wallet-account-option {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    padding: 5px 10px;
+    }
+    
+    .crypto-wallet-account-option p {
+    margin-left: 10px;
+    }
+    
+    .crypto-wallet-transaction {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    }
+    
+    .crypto-wallet-transaction-input {
+    flex-growdisplay: flex;
+    align-items: center;
+    background-color: #ffffff;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    padding: 5px;
+    margin-right: 10px;
+    }
+    
+    .crypto-wallet-transaction-input input {
+    border: none;
+    background-color: transparent;
+    margin-right: 5px;
+    }
+    
+    .crypto-wallet-transaction-buttons button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    margin-right: 5px;
+    }
+    
+    .crypto-wallet-transaction-buttons button:hover {
+    transform: scale(1.2);
+    }
+    
+    .crypto-wallet-network-selector {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    }
+    
+    .crypto-wallet-network-selector p {
+    margin-right: 10px;
+    }
+    
+    .crypto-wallet-network-options {
+    position: absolute;
+    top: 40px;
+    right: 0;
+    width: 100%;
+    background-color: #ffffff;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    }
+    
+    .crypto-wallet-network-option {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    padding: 5px 10px;
+    }
+    
+    .crypto-wallet-network-option p {
+    margin-left: 10px;
+    }
+    
+    @media only screen and (max-width: 600px) {
+    .crypto-wallet-container {
+    width: 100%;
+    margin: 0;
+    border-radius: 0;
+    }
+    
+    .crypto-wallet-header {
+    flex-direction: column;
+    align-items: center;
+    }
+    
+    .crypto-wallet-balance {
+    margin-top: 20px;
+    }
+    
+    .crypto-wallet-account {
+    margin-top: 20px;
+    }
+    
+    .crypto-wallet-account-options {
+    top: 30px;
+    }
+    
+    .crypto-wallet-transaction {
+    margin-top: 20px;
+    flex-direction: column;
+    }
+    
+    .crypto-wallet-transaction-input {
+    margin-right: 0;
+    margin-bottom: 10px;
+    }
+    
+    .crypto-wallet-network-selector {
+    margin-top: 20px;
+    }
+    
+    .crypto-wallet-network-options {
+    top: 30px;
+    right: -10px;
+    }
+    }
+
+    .buttons-container {
+        display: flex;
+        justify-content: center;
+        gap: 2rem;
+      }
+      
+      .send-button,
+      .receive-button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 1rem;
+        border: none;
+        border-radius: 10rem;
+        padding: 0.3rem 3rem;
+        font-size: 0.5rem;
+        font-weight: bold;
+        text-transform: uppercase;
+        background-color: #00b2ff;
+        color: white;
+        cursor: pointer;
+        transition: all 0.3s ease-in-out;
+      }
+      
+      .send-button:hover,
+      .receive-button:hover {
+        transform: translateY(-0.2rem);
+        box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+      }
+      
+      .send-icon,
+      .receive-icon {
+        font-size: 2rem;
+      }
+      .send-icon {
+        color: #8ce8ff;
+      }
+      .receive-icon {
+        color: #00ffcc;
+      }
+      
+      .card-container {
+        display: flex;
+        justify-content: center;
+      }
+      
+      .card {
+        width: 30rem;
+        border: none;
+        border-radius: 1rem;
+        background-color: white;
+        box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+        transition: all 0.3s ease-in-out;
+      }
+      
+      
+      .card-header {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 2rem;
+        border-bottom: 1px solid #f0f0f0;
+      }
+      
+      .card-header h3 {
+        font-size: 2rem;
+        font-weight: bold;
+        text-transform: uppercase;
+      }
+      
+      .card-body {
+        padding: 2rem;
+      }
+      
+      .card-body p {
+        font-size: 1.5rem;
+        line-height: 2.5rem;
+      }
+      
